@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travel Planner & Explorer</title>
+  <script type="module" crossorigin src="/assets/index-DU3NFkjn.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-oHrOZYqJ.css">
+</head>
+<body>
+  <!-- Hero section with background image added inline -->
+  <header style="
+    background-image: url('/assets/free-travel-background%20-BzUlzjSH.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: white;
+  ">
+    <!-- Dark overlay -->
+    <div style="
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.55);
+      z-index: 1;
+    "></div>
+
+    <!-- Content on top -->
+    <div style="position: relative; z-index: 2; max-width: 900px; padding: 2rem;">
+      <h1 style="font-size: 3.5rem; margin-bottom: 1rem; text-shadow: 2px 2px 8px rgba(0,0,0,0.8);">
+        Travel Planner & Explorer
+      </h1>
+      <p style="font-size: 1.5rem; margin-bottom: 2rem; text-shadow: 1px 1px 6px rgba(0,0,0,0.7); max-width: 700px; margin-left: auto; margin-right: auto;">
+        Discover countries, attractions, and plan your next adventure
+      </p>
+
+      <div class="search-container">
+        <input type="text" id="search" placeholder="Search country or city..." />
+        <button id="searchBtn">Search</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div id="results"></div>
+  </main>
+
+</body>
+</html>

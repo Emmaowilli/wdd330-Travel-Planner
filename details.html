@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Country Details</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Hero section with background image – fixed path and content placement -->
+  <header style="
+   background-image: url('images/free-travel-background .png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;  /* reduced a bit so content is not too far down */
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: white;
+  ">
+    <!-- Dark overlay -->
+    <div style="
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.55);
+      z-index: 1;
+    "></div>
+
+    <!-- Content on top of overlay – added back link and title here -->
+    <div style="position: relative; z-index: 2; max-width: 900px; padding: 2rem;">
+      <a href="index.html" style="color: white; text-decoration: none; font-size: 1.2rem; display: block; margin-bottom: 1rem;">
+        ← Back to search
+      </a>
+      <h1 id="country-name" style="font-size: 3rem; margin-bottom: 1rem; text-shadow: 2px 2px 8px rgba(0,0,0,0.8);"></h1>
+    </div>
+  </header>
+
+  <main id="details" style="padding: 2rem; max-width: 900px; margin: 0 auto;"></main>
+
+  <div style="text-align: center; margin: 2rem;">
+    <button id="save-btn" style="
+      background: #10b981;
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      border-radius: 8px;
+      cursor: pointer;
+    ">
+      Save to Favorites
+    </button>
+  </div>
+
+  <script src="js/main.js" type="module"></script>
+</body>
+</html>
